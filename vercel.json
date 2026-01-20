@@ -1,0 +1,8 @@
+{
+    "builds": [
+        {"src":"redcross_masquerade/wsgi.py", "use": "@vercel/python"}
+    ],
+    "routes": [
+{"src": "/(.*)", "dest": "redcross_masquerade/wsgi.py"}
+    ]
+}

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-4rlsdrad&8@b3(!zzv1zplb%vgyq9_x^86yi11%ck5iza*cb(-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '127.0.1']
 
 
 # Application definition
@@ -68,6 +68,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'redcross_masquerade.wsgi.application'
+
 
 
 # Database
