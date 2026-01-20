@@ -58,9 +58,13 @@
       /* FIXED HERO BACKGROUND - Matching Kobby.JPG exactly */
       .hero {
         height: 100vh;
-        background:
+        /* Use explicit background properties to avoid shorthand parsing issues */
+        background-image:
           linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-          url("{% static 'images/kobby.jpg' %}") no-repeat center center/cover;
+          url("{% static 'images/kobby.jpg' %}");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
